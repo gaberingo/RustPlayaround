@@ -1,6 +1,5 @@
 #[cfg(test)]
 mod test {
-    use super::*;
 
     // Pattern match with Option enum
     fn example_1() {
@@ -121,6 +120,7 @@ mod test {
         }
 
         #[derive(Debug, PartialEq)]
+        #[allow(dead_code)]
         enum Role {
             Developer,
             PM,

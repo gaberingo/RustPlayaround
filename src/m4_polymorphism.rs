@@ -1,33 +1,31 @@
-use ethers::types::Address;
-use std::{ops::Add, str::FromStr};
-
-trait EthereumAddress{
-    fn convert_address(&self) -> Result<Address, &str>;
-}
-
-impl EthereumAddress for &str {
-    fn convert_address(&self) -> Result<Address, &'static str> {
-        match Address::from_str(&self) {
-            Ok(address) => Ok(address),
-            Err(_) => Err("Invalid Ethereum Address"),
-        }
-    }
-}
-
-impl EthereumAddress for Address {
-    fn convert_address(&self) -> Result<Address, &'static str> {
-        Ok(*self)
-    }
-}
-
-fn get_ethereum_address<T: EthereumAddress>(address: T) -> Address{
-    address.convert_address().unwrap()
-}
-
-
 #[cfg(test)]
 mod test {
-    use super::*;
+    
+    use ethers::types::Address;
+    use std::str::FromStr;
+
+    trait EthereumAddress{
+        fn convert_address(&self) -> Result<Address, &str>;
+    }
+
+    impl EthereumAddress for &str {
+        fn convert_address(&self) -> Result<Address, &'static str> {
+            match Address::from_str(&self) {
+                Ok(address) => Ok(address),
+                Err(_) => Err("Invalid Ethereum Address"),
+            }
+        }
+    }
+
+    impl EthereumAddress for Address {
+        fn convert_address(&self) -> Result<Address, &'static str> {
+            Ok(*self)
+        }
+    }
+
+    fn get_ethereum_address<T: EthereumAddress>(address: T) -> Address{
+        address.convert_address().unwrap()
+    }
 
     #[test]
     fn tests_polymorphism(){

@@ -6,6 +6,11 @@ mod m5_lifetimes;
 mod m6_patterns;
 mod m7_async;
 mod m8_collections;
+mod m9_dcl_macros;
+mod m10_proc_macros;
+mod m11_smart_pointers;
+
+mod random_code;
 fn main() {
     println!("Hello, world!");
 }

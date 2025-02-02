@@ -9,6 +9,7 @@ mod m8_collections;
 mod m9_dcl_macros;
 mod m10_proc_macros;
 mod m11_smart_pointers;
+mod m12_concurrency;
 
 mod random_code;
 fn main() {

@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod test {
-
+    use std::str::Chars;
     use itertools::Itertools;
     use std::vec;
 
@@ -15,6 +15,12 @@ mod test {
         num_arr.iter().k_smallest(2).sum()
     }
 
+    fn count_duplicates(text: &str) -> u32 {
+        let new_vec: Vec<char> = text.chars().collect();
+        println!("{:?}", new_vec);
+        11
+    }
+
     #[test]
     fn test_rndm(){
         dbg!("Hellow");
@@ -26,5 +32,7 @@ mod test {
 
         let b = vec!(2,3);
         dbg!(b);
+
+        count_duplicates("GabeRingo");
     }
 }

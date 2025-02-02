@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"attr":["funtion_to_string"]};

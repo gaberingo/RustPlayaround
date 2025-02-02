@@ -9,4 +9,4 @@ itertools = "0.14.0"
 reqwest = { version = "0.12.12", features = ["json"] }
 serde_json = "1.0.137"
 tokio = { version = "1.43.0", features = ["full"] }
-my_proc_macro = {path = "/home/gabe/workstation/RustProject/playaround/my_proc_macro"}
+ai_function_copy_course = {path = "/home/gabe/workstation/RustProject/playaround/ai_functions_copy_course"}

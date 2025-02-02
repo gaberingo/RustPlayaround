@@ -48,6 +48,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "ai_function_copy_course"
+version = "0.1.0"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.96",
+]
+
+[[package]]
 name = "arrayvec"
 version = "0.7.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1992,15 +2001,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "my_proc_macro"
-version = "0.1.0"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn 2.0.96",
-]
-
-[[package]]
 name = "native-tls"
 version = "0.2.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2404,9 +2404,9 @@ checksum = "953ec861398dccce10c670dfeaf3ec4911ca479e9c02154b3a215178c5f566f2"
 name = "playaround"
 version = "0.1.0"
 dependencies = [
+ "ai_function_copy_course",
  "ethers",
  "itertools 0.14.0",
- "my_proc_macro",
  "reqwest 0.12.12",
  "serde_json",
  "tokio",

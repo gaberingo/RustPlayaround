@@ -1,7 +1,7 @@
 #[cfg(test)]
 mod test {
 
-    use my_proc_macro::funtion_to_string;
+    use ai_function_copy_course::funtion_to_string;
 
     const OUTPUT: &str = "";
 

@@ -1,0 +1,1 @@
+searchState.loadedDescShard("my_proc_macro", 0, "This attribute macro converts a Rust function into a …")

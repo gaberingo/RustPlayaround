@@ -1,0 +1,1 @@
+searchState.loadedDescShard("ai_function_copy_course", 0, "This attribute macro converts a Rust function into a …")

@@ -1,0 +1,1 @@
+/home/gabe/workstation/RustProject/playaround/ai_functions_copy_course/target/package/ai_function_copy_course-0.1.0/target/debug/libai_function_copy_course.so: /home/gabe/workstation/RustProject/playaround/ai_functions_copy_course/target/package/ai_function_copy_course-0.1.0/src/lib.rs

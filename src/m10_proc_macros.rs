@@ -1,4 +1,5 @@
 #[cfg(test)]
+#[allow(dead_code)]
 mod test {
 
     use ai_function_copy_course::funtion_to_string;

@@ -1,4 +1,5 @@
 #[cfg(test)]
+#[allow(dead_code)]
 mod test {
     use std::rc::Weak;
 

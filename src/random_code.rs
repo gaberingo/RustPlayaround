@@ -1,4 +1,5 @@
 #[cfg(test)]
+#[allow(dead_code, unused_imports)]
 mod test {
     use std::str::Chars;
     use itertools::Itertools;
